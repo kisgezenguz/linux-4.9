@@ -240,7 +240,7 @@ menu "Config for Layered Driver Features"
 #		depends on RTL_HARDWARE_MULTICAST
 
 	config RTL_HW_MCAST_PATCH_FOR_MAC
-		#bool "RTL Hardware Multicast patch for Mac address"
+		bool "RTL Hardware Multicast patch for Mac address"
 		default y
 		depends on RTL_HARDWARE_MULTICAST && !OPENWRT_SDK
 		depends on RTL_8196E || RTL_8881A || RTL_8198C || RTL_8197F
